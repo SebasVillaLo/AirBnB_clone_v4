@@ -10,18 +10,16 @@ header .logo {
     height: 100%;
 }
 
-header #api_status.available {
-    float: right;
-    border-radius: 40px;
+header #api_status {
+    position: absolute;
+    right: 30px;
+    margin-top: -55px;
     width: 40px;
     height: 40px;
-    border-right: 30px;
-    display: table;
-    top: 0;
-    left: 0;
+    border-radius: 50%;
     background-color: #cccccc;
 }
 
-header .available {
+header #api_status.available {
     background-color: #ff545f;
 }
