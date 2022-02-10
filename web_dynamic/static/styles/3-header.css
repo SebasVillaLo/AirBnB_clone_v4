@@ -15,6 +15,10 @@ header.available {
 #api_status {
     text-align: right;
     border-radius: 40px;
-    center: vertical;
-    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: 30px;
+    background-color: #cccccc;
 }
