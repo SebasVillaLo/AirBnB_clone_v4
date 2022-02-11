@@ -1,23 +1,23 @@
 $(function () {
-  var mylist = [];
-  $('input[type="checkbox"]').on('change', function () {
-    if ($(this).is(':checked')) {
-      mylist.push($(this).attr('data-name'));
-    } else {
-      const index = mylist.indexOf($(this).attr('data-name'));
-      mylist.splice(index, 1);
-    }
-    function cortarTextoConPuntos(texto, limite) {
-      var puntosSuspensivos = "...";
-      if (texto.length > limite) {
-        texto = texto.substring(0, limite) + puntosSuspensivos;
+  var mylist = {};
+  function checkBox() {
+    $('input[type="checkbox"]').on('change', function () {
+      if ($(this).is(':checked')) {
+        mylist[$(this).attr('data-id')] = $(this).attr('data-name');
+      } else {
+        delete mylist[$(this).attr('data-id')]
+      }
+      function cortarTextoConPuntos(texto, limite) {
+        var puntosSuspensivos = "...";
+        if (texto.length > limite) {
+          texto = texto.substring(0, limite) + puntosSuspensivos;
+        }
+
+        return texto;
       }
 
-      return texto;
-    }
-
-    $('.amenities h4').text(cortarTextoConPuntos(mylist.join(', '), 42));
-    $('div .amenities h4').css("width", "300px");
-    $('div .amenities h4').css("height", "16.5px");
-  });
+      $('.amenities h4').text(cortarTextoConPuntos(Object.values(mylist).join(', '), 42));
+    });
+  }
+  checkBox();
 });
