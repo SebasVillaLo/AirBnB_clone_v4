@@ -155,8 +155,8 @@ No known bugs at this time.
 
 ## Authors
 
- Adrian Felipe Ceron - [Github](https://github.com/afecego) / [Twitter](https://twitter.com/afecego)
- Sebastian Villa Lopez - [Github](https://github.com/SebasVillaLo) / [Twitter](https://twitter.com/VillaLo19)
+Adrian Felipe Ceron - [Github](https://github.com/afecego) / [Twitter](https://twitter.com/afecego)
+Sebastian Villa Lopez - [Github](https://github.com/SebasVillaLo) / [Twitter](https://twitter.com/VillaLo19)
 
 
 Second part of Airbnb: Joann Vuong
